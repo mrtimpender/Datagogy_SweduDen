@@ -1,6 +1,11 @@
+/* font-family: 'Merriweather', serif;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
+
 body {
-  background-color: #578D73;
+  background-color: #2D2E34;
 }
+
 
 #left-nav {
   margin-left: 1.32rem;
@@ -24,9 +29,7 @@ nav a+a {
   margin-left: .4em;
 }
 
-/* font-family: 'Merriweather', serif;
-   font-family: 'Raleway', sans-serif;
-   font-family: 'Open Sans', sans-serif; */
+
 
 /* General, Body */
 .vertical-center {
@@ -37,17 +40,17 @@ nav a+a {
 }
 
 .img-wrap {
-  background-image: url('education-3.jpg');
+  background-image: url('chalkboard-3.jpg');
   background-size: cover;
 }
 
 
 /* Main */
 .hero {
-  font-family: 'Merriweather', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 6rem;
   color: white;
-  margin-bottom: 6rem;
+  margin-bottom: 30px;
 }
 
 .btn-lg {
@@ -82,4 +85,15 @@ img {
   height: 308;
   padding: 1rem;
   padding-right: 7rem;
+}
+
+.buttons {
+  margin-top: 70px;
+}
+
+.blank {
+  height: 132px;
+  width: 415.33px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
