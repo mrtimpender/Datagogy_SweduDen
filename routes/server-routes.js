@@ -48,14 +48,14 @@ router.get('/dashboard', function(request, response) {
   response.render('dashboard');
 });
 
-// Define test route
-router.route('/test').get(function(request, response) {
+// Define create-quiz route
+router.get('/create-quiz', function(request, response) {
   // If not logged in/authenticated send back to index otherwise send to correct path
   if (!request.user) {
     response.redirect('/');
     return;
   }
-  response.render('test');
+  response.render('create-quiz');
 });
 
 // Define logout route which is a virtual path - just a passport logout method

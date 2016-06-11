@@ -1,0 +1,57 @@
+body {
+  background-image: url('books.jpg');
+  background-size: cover;
+  width: 100%;
+
+}
+
+#output {
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+#left-nav {
+  margin-left: 1.32rem;
+}
+
+ul {
+  border-radius: 9px;
+}
+
+img {
+  border-radius: 9px;
+}
+
+.nav-header {
+  text-align: left;
+  font-size: 5rem;
+}
+
+.subheader{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
+nav a+a {
+  margin-left: .4em;
+}
+
+i {
+  color:white;
+  text-shadow: 2px 2px #1b1b1b;
+}
+p {
+  color:white;
+  text-shadow: 2px 2px #1b1b1b;
+  margin-top: 5px;
+}
+
+.centered{
+  text-align: center;
+}
