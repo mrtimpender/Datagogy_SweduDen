@@ -1,0 +1,19 @@
+body {
+  background-image: url('phish.jpg');
+  background-size: cover;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.jumbotron {
+  padding: 3rem;
+}
+
+nav a+a {
+  margin-left: .4em;
+}

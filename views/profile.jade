@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Profile
+    // Normalize
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
+    // Bootstrap
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='style-profile.css')
+    link(rel='icon', type='image/png', href='donuts.png')
+  body
+    // Navigation Bar
+    nav.navbar.navbar-default
+      .col-xs-8
+        a.btn.btn-info.navbar-btn(href='/profile') Profile
+        a.btn.btn-info.navbar-btn(href='/news') News
+        a.btn.btn-info.navbar-btn(href='/chat') Chat
+      .col-xs-4.text-right
+        a.btn.btn-default.navbar-btn(href='/logout') Log out
+    .container-fluid
+      .row
+        .col-lg-2.col-offset-6
+          h1#profile.text-center Profile        
+    #left-nav.list-group.col-lg-2.col-md-3
+      button#recent.list-group-item Most Recent Show
+      button#tiph.list-group-item Today in Phish History
+      button#upcoming-shows.list-group-item Upcoming shows
+      button#reviews.list-group-item How've they been playing?
+    .contatiner
+      .row.col-lg-9.col-md-8
+        ul.col-lg-12.col-md-12(style='list-style:none;')
+          li.text-center
+    // Javascript
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='recent-show-ajax.js')
+    script(src='tiph-ajax.js')
+    script(src='upcoming-shows-ajax.js')
+    script(src='reviews-ajax.js')
