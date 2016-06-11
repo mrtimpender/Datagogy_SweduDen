@@ -58,17 +58,6 @@ router.route('/test').get(function(request, response) {
   response.render('test');
 });
 
-// Define chat route
-router.get('/chat', function(request, response) {
-  // If not logged in/authenticated send back to index otherwise send to correct path
-  if (!request.user) {
-    response.redirect('/');
-    return;
-  }
-  response.render('chat');
-});
-
-
 // Define logout route which is a virtual path - just a passport logout method
 router.get('/logout', function(request, response) {
   request.logout();
