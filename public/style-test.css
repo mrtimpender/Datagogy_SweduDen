@@ -1,0 +1,63 @@
+/* font-family: 'Merriweather', serif;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
+
+/* General, Body */
+.vertical-center {
+  min-height: 100%;
+  min-height: 50vh;
+  align-items: center;
+  display: flex;
+}
+
+.img-wrap {
+  background-image: url('education-3.jpg');
+  background-size: cover;
+}
+
+
+/* Main */
+.hero {
+  font-family: 'Merriweather', serif;
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 6rem;
+}
+
+.btn-lg {
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* Articles */
+.article-header {
+  font-size: 2.9rem;
+  color: black;
+  text-align: center;
+}
+
+.article {
+  font-family: 'Merriweather', serif;
+  font-size: 1.7rem;
+  color: black;
+}
+
+.article-div {
+  background-color: white;
+  min-height: 33rem;
+  border: 1.5px solid #c9c9c9;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+img {
+  width: 393px;
+  height: 308;
+  padding: 1rem;
+  padding-right: 7rem;
+}
+
+nav a+a {
+  margin-left: .4em;
+}

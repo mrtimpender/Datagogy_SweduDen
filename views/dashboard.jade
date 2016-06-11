@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Dashboard
+    // Normalize
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
+    // Bootstrap
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='style-dashboard.css')
+    link(rel='stylesheet', type='text/css', href='style-test.css')
+    link(rel='icon', type='image/png', href='donuts.png')
+  body
+  // Navigation Bar
+  nav.navbar.navbar-default
+    .col-xs-8
+      a.btn.btn-info.navbar-btn(href='/dashboard') Dashboard
+      a.btn.btn-info.navbar-btn(href='/chat') Chat
+    .col-xs-4.text-right
+      a.btn.btn-danger.navbar-btn(href='/logout') Log out
+  // Img
+  .img-wrap
+    // Hero and Button
+    .container
+      .row.vertical-center
+        .col-lg-8.col-lg-offset-2
+          h1.text-center.hero Dashboard
+          a.btn.btn-primary.btn-lg.btn-block(href='orders.html', role='button') Search Quizzes!
+  // Company Info Section
+  .container-fluid
+    .row
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   Test A
+          img(src='graph.jpg')
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   Test B
+          img(src='graph-2.jpg')
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   Test C
+          img(src='graph-3.jpg')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  // Include all compiled plugins
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
