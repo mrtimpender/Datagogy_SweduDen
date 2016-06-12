@@ -58,6 +58,7 @@ router.get('/create-quiz', function(request, response) {
   response.render('create-quiz');
 });
 
+// Define reports page route
 router.get('/generate-report', function(request, response) {
   // If not logged in/authenticated send back to index otherwise send to correct path
   if (!request.user) {
@@ -65,6 +66,16 @@ router.get('/generate-report', function(request, response) {
     return;
   }
   response.render('generate-report');
+});
+
+// Define data headquarters page route
+router.get('/data-hq', function(request, response) {
+  // If not logged in/authenticated send back to index otherwise send to correct path
+  if (!request.user) {
+    response.redirect('/');
+    return;
+  }
+  response.render('data-hq');
 });
 
 // Define logout route which is a virtual path - just a passport logout method

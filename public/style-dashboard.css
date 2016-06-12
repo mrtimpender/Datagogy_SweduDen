@@ -86,3 +86,8 @@ img {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
