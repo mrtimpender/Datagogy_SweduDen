@@ -12,124 +12,181 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='style-create-quiz.css')
   body
   body
-  // Navigation Bar
-  nav.navbar.navbar-default
-    .col-xs-8
-      a.btn.btn-success.navbar-btn(href='/dashboard') Dashboard
-      a.btn.btn-success.navbar-btn(href='/create-quiz') Quiz Creation
-      a.btn.btn-success.navbar-btn(href='/generate-report') Report Center
-      a.btn.btn-success.navbar-btn(href='/data-hq') Data HQ
-    .col-xs-4.text-right
-      a.btn.btn-warning.navbar-btn(href='/logout') Log out
-  .container-fluid.col-lg-12
-    .row
-      .col-lg-6.col-lg-offset-8.right
-        h1.header Search. Learn. Grow.
-        p Your Questionnaire Home
-  .container-fluid.col-lg-4.col-md-4.left
-    .row
-      h3.subheader Seach for a Question
-      .form-group
-        <input type="text" class="form-control" id="search-input" placeholder="&#x1f50d Search">
-    .row
-      h3.subheader Popular Subjects
-      .btn.btn-info.navbar-btn Algebra 1
-      .btn.btn-info.navbar-btn Spanish 1
-      .btn.btn-info.navbar-btn.german German 1
-    br
-    .row
-      h3.subheader Recently Visited Subjects
-      a.btn.btn-info.navbar-btn.german(href='') German 2
-      a.btn.btn-info.navbar-btn.german(href='') German 1
-      a.btn.btn-info.navbar-btn.german(href='') German 3
-  #output.container-fluid.col-lg-7.col-md-7.gap
-    .row
-      h3#output-header German 1 Questions
-    .row
-      ul.col-lg-7.col-md-12(style='list-style:none')
+  body
+    // Navigation Bar
+    nav.navbar.navbar-default
+      .col-xs-8
+        a.btn.btn-success.navbar-btn(href='/dashboard') Dashboard
+        a.btn.btn-success.navbar-btn(href='/create-quiz') Quiz Creation
+        a.btn.btn-success.navbar-btn(href='/generate-report') Report Center
+        a.btn.btn-success.navbar-btn(href='/data-hq') Data HQ
+      .col-xs-4.text-right
+        a.btn.btn-warning.navbar-btn(href='/logout') Log out
+    .container-fluid.col-lg-12
+      .row
+        .col-lg-4.col-lg-offset-8
+          h1.header Search. Learn. Grow.
+          p.header2 Your Questionnaire Home
+    .container-fluid.col-lg-4.col-md-4.left
+      .row
+        h3.subheader Seach for a Question
+        .form-group
+          <input type="text" class="form-control" id="search-input" placeholder="&#x1f50d Search">
+      .row
+        h3.subheader Connect Your Classes
+        input.radio(type='radio', name='classes1')
+        span.radioOpt Class A
+        input.radio(type='radio', name='classes2')
+        span.radioOpt Class B
+        input.radio(type='radio', name='classes3')
+        span.radioOpt Class C
+      .row
+        h3.subheader Popular Subjects
+        .btn.btn-info.navbar-btn French 3
+        .btn.btn-info.navbar-btn Spanish 1
+        .btn.btn-info.navbar-btn.german German 2
+      br
+      .row
+        h3.subheader Recently Visited Subjects
+        a.btn.btn-info.navbar-btn.german(href='') German 2
+        a.btn.btn-info.navbar-btn.german(href='') German 1
+        a.btn.btn-info.navbar-btn.german(href='') German 3
+    .container-fluid.col-lg-7.col-md-7.gap
+      #output
+        .row.gap
+          h3#output-header German Questions
+        .row.gap
+          ul.col-lg-7.col-md-12(style='list-style:none')
+            li.text
+              .btn.btn-info.q1
+                strong Q: 
+                | Write directions from your house to the school.
+              .answer1
+                p
+                  strong A: 
+                  | Gerade aus bis zur Ampel, dann biege nach rechts in der Syracusestrasse ein.
+                p
+                  strong Rubric: 
+                  | The grading rubric goes here here and here.
+                br
+                .row
+                  span.comments
+                    a Comments
+                  .rating
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                  hr
+                .row
+                  .gap
+                    p
+                      strong BeachTeach:
+                      |  Perfect for learning location nouns and directional adjectives!
+                  .comments
+                    p
+                      a(href='#') Add Comment
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q2 Translate into German - I like to hike. I don’t swim.
+              .answer2
+                p
+                  strong A: 
+                  | Ich mag wandern. Ich mag schwimmen nicht./ Ich wandre gern.
+                p
+                  strong Rubric: 
+                  | The grading rubric goes here here and here.
+                .row
+                  span.comments
+                    a(href='#') Comments
+                  .rating
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                hr
+                .row
+                  .gap
+                    p
+                      strong profApple16:
+                      | Hiking is part of the reason I moved to Colorado.  I like to use this excerise to open a borader discussion on outdoor activities.  It is easy to swap out the verbs for whatever interests your students.
+                  .comments
+                    p
+                      a(href='#') Add Comment
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q3 Make a suggestion to a friend to help them have a good time.
+              .answer3
+                p
+                  strong A: 
+                  | Tanzen wir mal!
+                p
+                  strong Rubric: 
+                  | The grading rubric goes here here and here.
+                .row
+                  .comments
+                    a Add Comment
+                  .rating
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                    span ☆
+                  hr
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q
+                  | Write an invitation to a party. Include as much information about the party as you can.
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q Wir haben Jeans und Pullis in allen Farben. Haben Sie sonst einen Wunsch? TV.
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q
+                  | Translate into German - Sabine really likes to play soccer. She doesn’t like to watch TV.
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q
+                  | Write a short dialogue asking about the food at a restaurant. Use demonstratives.
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q Explain what you have to do to clean up the kitchen.
+            li.text
+              .btn.btn-info
+                strong Q: 
+                span.q
+                  | Write the correct form of "you" for your family members, three friends, and the new student at school.
+      .row.btn-quiz
+        .gap.btn.btn-success.col-lg-2.add Add to Quiz
+        .gap.btn.btn-info.btn-failure.col-lg-3 Remove Question
+        .gap.btn.btn-info.btn-warning.col-lg-4
+          a(href='/generate-report') Finalize Quiz
+    .container-fluid.col-lg-12.quiz-output
+      .row
+        h1.subheader.gap Current Quiz
+      .row
         li.text
-          .btn.btn-info.q1
+          .gap.btn.btn-info.qq1
             strong Q: 
             | Write directions from your house to the school.
-          .answer1
-            strong A: 
-            | Gerade aus bis zur Ampel, dann biege nach rechts in der Syracusestrasse ein.
-            strong Rubric: 
-            | The grading rubric goes here here and here.
-            .row
-              .rating
-                span ☆
-                span ☆
-                span ☆
-                span ☆
-                span ☆
-              .align-right
-                p Show Comments
         li.text
-          .btn.btn-info
+          .gap.btn.btn-info.qq2
             strong Q: 
-            span.q2 Translate into German - I like to hike. I don’t swim.
-          .answer2
-            strong A: 
-            | Ich mag wandern. Ich mag schwimmen nicht./ Ich wandre gern.
-            strong Rubric: 
-            | The grading rubric goes here here and here.
-            .row
-              .rating
-                p
-                  span ☆
-                  span ☆
-                  span ☆
-                  span ☆
-                  span ☆
-              .align-right
-                p Show Comments
+            span.qq2 Translate into German - I like to hike. I don’t swim.
         li.text
-          .btn.btn-info
+          .gap.btn.btn-info.qq3
             strong Q: 
-            span.q3 Make a suggestion to a friend to help them have a good time.
-          .answer3
-            strong A: 
-            | Tanzen wir mal!
-            strong Rubric: 
-            | The grading rubric goes here here and here.
-            .row
-              .rating
-                span ☆
-                span ☆
-                span ☆
-                span ☆
-                span ☆
-              .align-right
-                p Show Comments
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q
-              | Write an invitation to a party. Include as much information about the party as you can.
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q Wir haben Jeans und Pullis in allen Farben. Haben Sie sonst einen Wunsch? TV.
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q
-              | Translate into German - Sabine really likes to play soccer. She doesn’t like to watch TV.
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q
-              | Write a short dialogue asking about the food at a restaurant. Use demonstratives.
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q Explain what you have to do to clean up the kitchen.
-        li.text
-          .btn.btn-info
-            strong Q: 
-            span.q
-              | Write the correct form of "you" for your family members, three friends, and the new student at school.
+            span.qq3 Make a suggestion to a friend to help them have a good time.
+
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='https://use.fontawesome.com/f4b058bfe8.js')
     script(type='text/javascript', src='create-quiz-script.js')

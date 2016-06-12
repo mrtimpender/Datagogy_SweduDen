@@ -1,19 +1,60 @@
 body {
   background-image: url('books.jpg');
   background-size: cover;
+  /*position: fixed;*/
+  bottom: 0;
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+  ;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 
 .left {
     margin-left: 10px;
 }
 
 #output {
-  max-height: 60vh;
+  max-height: 58vh;
   overflow: scroll;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   text-align: left;
   border-radius: 5px;
+  margin-left: 10px;
+  margin-top:10px;
+}
+
+#output li {
+  margin-bottom: 2px;
+}
+
+.quiz-output {
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.quiz-output li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-quiz {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.superGap{
+  margin-left: 50px;
 }
 
 #right {
@@ -33,8 +74,7 @@ body {
 }
 
 .output-header {
-  background-color: rgba(0,0,0,0.1);
-  margin-: 10px;
+  margin-left: 60px;
 }
 
 ul {
@@ -56,7 +96,7 @@ img {
   text-shadow: 2px 2px #1b1b1b;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5 {
   color: white;
   text-shadow: 2px 2px #1b1b1b;
 }
@@ -66,9 +106,8 @@ nav a+a {
 }
 
 p {
-  color:white;
-  text-shadow: 2px 2px #1b1b1b;
   margin-top: 5px;
+  margin-
 }
 
 .centered{
@@ -85,10 +124,18 @@ p {
   margin-top: 3vh;
 }
 
+.comments {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
 /* -- Star Ratings --*/
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
+  margin-left: 10px;
+  display:inline;
+  float:right;
 }
 .rating > span {
   display: inline-block;
@@ -101,7 +148,28 @@ p {
    position: absolute;
 }
 
-#header {
-  float:right;
-  text-align: right;
+.header, .header p{
+  /*float:right;*/
+  /*text-align: right;*/
+  color: black;
+}
+
+.radio {
+  display: inline;
+}
+.radioOpt {
+  color:white;
+  margin: 10px;
+}
+
+.btn a {
+  color:white;
+}
+
+.btn a:hover {
+  color: white;
+}
+.btn a:visted {
+  color: white;
+  text-decoration: none;
 }

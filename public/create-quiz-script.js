@@ -3,6 +3,12 @@ $(document).ready(function() {
   $(".answer1").hide();
   $(".answer2").hide();
   $(".answer3").hide();
+  $(".show").hide();
+  $('.quiz-output').hide();
+  $('.qq1').hide();
+  $('.qq2').hide();
+  $('.qq3').hide();
+
   $(".german").on("click", function(event){
     event.preventDefault();
     $('#output').slideToggle("slow");
@@ -41,6 +47,25 @@ $(document).on('click', '.q3', function (event) {
   $(".answer2").hide("slow");
   $(".answer3").slideToggle("slow");
 });
+
+var counter = 0;
+$(document).on('click', '.add', function (event) {
+  event.preventDefault();
+  $(".quiz-output").show("slow");
+
+  if (counter == 0 ){
+    $(".qq1").show();
+    counter++;
+  } else if (counter == 1){
+    $(".qq2").show();
+    counter++;
+  } else if (counter == 2) {
+    $(".qq3").show();
+    counter++;
+  }
+});
+
+
 
   // // Change the nav buttons to active and color the jquery loaded display
   //
