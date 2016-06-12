@@ -2,16 +2,39 @@ body {
   background-image: url('books.jpg');
   background-size: cover;
   width: 100%;
+}
 
+.left {
+    margin-left: 10px;
 }
 
 #output {
   max-height: 60vh;
   overflow: scroll;
+  background-color: rgba(0,0,0,0.2);
+  text-align: left;
+  border-radius: 5px;
+}
+
+#right {
+  margin-left: 10px;
 }
 
 #left-nav {
   margin-left: 1.32rem;
+}
+
+.gap {
+  margin-left: 10px;
+}
+
+#output .btn{
+  color:white;
+}
+
+.output-header {
+  background-color: rgba(0,0,0,0.1);
+  margin-: 10px;
 }
 
 ul {
@@ -42,10 +65,6 @@ nav a+a {
   margin-left: .4em;
 }
 
-i {
-  color:white;
-  text-shadow: 2px 2px #1b1b1b;
-}
 p {
   color:white;
   text-shadow: 2px 2px #1b1b1b;
@@ -54,4 +73,35 @@ p {
 
 .centered{
   text-align: center;
+}
+
+.answer, .answer1, .answer2, .answer3  {
+  margin-top: 5vh;
+  margin-left: 1vh;
+  color:white;
+}
+
+.q, .q1, .q2, .q3 {
+  margin-top: 3vh;
+}
+
+/* -- Star Ratings --*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+#header {
+  float:right;
+  text-align: right;
 }

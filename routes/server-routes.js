@@ -58,6 +58,15 @@ router.get('/create-quiz', function(request, response) {
   response.render('create-quiz');
 });
 
+router.get('/generate-report', function(request, response) {
+  // If not logged in/authenticated send back to index otherwise send to correct path
+  if (!request.user) {
+    response.redirect('/');
+    return;
+  }
+  response.render('generate-report');
+});
+
 // Define logout route which is a virtual path - just a passport logout method
 router.get('/logout', function(request, response) {
   request.logout();

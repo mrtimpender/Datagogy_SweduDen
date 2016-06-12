@@ -1,0 +1,19 @@
+/* font-family: 'Merriweather', serif;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
+
+body {
+  background-color: #2D2E34;
+}
+
+ul {
+  border-radius: 9px;
+}
+
+img {
+  border-radius: 9px;
+}
+
+nav a+a {
+  margin-left: .4em;
+}
