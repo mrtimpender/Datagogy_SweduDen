@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Dashboard
+    // Normalize
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
+    // Open Sans
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    // Merriweather font
+    link(href='https://fonts.googleapis.com/css?family=Merriweather', rel='stylesheet', type='text/css')
+    // Raleway font
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    // Bootstrap
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='style-generate-report.css')
+    link(rel='icon', type='image/png', href='donuts.png')
+  body
+  // Navigation Bar
+  nav.navbar.navbar-default
+    .col-xs-8
+      a.btn.btn-success.navbar-btn(href='/dashboard') Dashboard
+      a.btn.btn-success.navbar-btn(href='/create-quiz') Quiz Creation
+      a.btn.btn-success.navbar-btn(href='/generate-report') Report Center
+      a.btn.btn-success.navbar-btn(href='/data-hq') Data HQ
+    .col-xs-4.text-right
+      a.btn.btn-warning.navbar-btn(href='/logout') Log out 
+  .container-fluid
+    .row.col-lg-4.col-lg-offset-2.jumbotron
+      form
+        fieldset.form-group
+          label(for='exampleSelect1') Example select
+          select#exampleSelect1.form-control
+            option John Appleseed
+            option Kenny Smith
+            option Rebecca Forman
+            option Daniel Abbott
+            option Amy Numan
+        small.text-muted All personal informational is secure
+        br
+        br
+        fieldset.form-group.col-lg-8
+          label(for='quiz-score') Question 1 
+          input#quiz-score.form-control(type='text', placeholder='Enter Score Here')
+        fieldset.form-group.col-lg-8
+          label(for='quiz-score') Question 2 
+          input#quiz-score.form-control(type='text', placeholder='Enter Score Here')
+        fieldset.form-group.col-lg-8
+          label(for='quiz-score') Question 3 
+          input#quiz-score.form-control(type='text', placeholder='Enter Score Here')
+    .col-lg-2
+      button.btn.btn-primary.btn-lg.submit-button(type='button') Submit Data
+  .container-fluid.graphs
+    .row
+      .col-lg-4.article-div
+        button.btn.btn-info.button-1(type='button') Question 1 Student Growth
+        div.image-1
+          img(src='bubble.png')
+      .col-lg-4.article-div
+        button.btn.btn-info.button-2(type='button') Question 2 Student Growth
+        div.image-2
+          img(src='growth.png')
+      .col-lg-4.article-div
+        button.btn.btn-info.button-3(type='button') Question 3 Student Growth
+        div.image-3
+          img(src='histogram.png')
+  
+      
+      
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+// Include all compiled plugins
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+// script
+script(src='generate-report.js')

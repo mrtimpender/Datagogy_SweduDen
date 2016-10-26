@@ -1,0 +1,46 @@
+/* font-family: 'Merriweather', serif;
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
+
+body {
+  background-image: url('chalkboard-2.jpg');
+}
+
+ul {
+  border-radius: 9px;
+}
+
+nav a+a {
+  margin-left: .4em;
+}
+
+.submit-button {
+  margin: 10rem;
+  margin-top: 10rem;
+}
+
+img {
+  width: 393px;
+  height: 240px;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  color: white;
+}
+
+.graphs {
+  margin-top: 8rem;
+}
+
+.image-1 {
+  display: none;
+}
+
+.image-2 {
+  display: none;
+}
+
+.image-3 {
+  display: none;
+}

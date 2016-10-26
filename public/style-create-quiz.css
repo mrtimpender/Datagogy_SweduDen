@@ -1,0 +1,175 @@
+body {
+  background-image: url('books.jpg');
+  background-size: cover;
+  /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  ;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.left {
+    margin-left: 10px;
+}
+
+#output {
+  max-height: 58vh;
+  overflow: scroll;
+  background-color: rgba(0,0,0,0.4);
+  text-align: left;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top:10px;
+}
+
+#output li {
+  margin-bottom: 2px;
+}
+
+.quiz-output {
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.quiz-output li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-quiz {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.superGap{
+  margin-left: 50px;
+}
+
+#right {
+  margin-left: 10px;
+}
+
+#left-nav {
+  margin-left: 1.32rem;
+}
+
+.gap {
+  margin-left: 10px;
+}
+
+#output .btn{
+  color:white;
+}
+
+.output-header {
+  margin-left: 60px;
+}
+
+ul {
+  border-radius: 9px;
+}
+
+img {
+  border-radius: 9px;
+}
+
+.nav-header {
+  text-align: left;
+  font-size: 5rem;
+}
+
+.subheader{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
+h2, h3, h4, h5 {
+  color: white;
+  text-shadow: 2px 2px #1b1b1b;
+}
+
+nav a+a {
+  margin-left: .4em;
+}
+
+p {
+  margin-top: 5px;
+  margin-
+}
+
+.centered{
+  text-align: center;
+}
+
+.answer, .answer1, .answer2, .answer3  {
+  margin-top: 5vh;
+  margin-left: 1vh;
+  color:white;
+}
+
+.q, .q1, .q2, .q3 {
+  margin-top: 3vh;
+}
+
+.comments {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* -- Star Ratings --*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  margin-left: 10px;
+  display:inline;
+  float:right;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.header, .header p{
+  /*float:right;*/
+  /*text-align: right;*/
+  color: black;
+}
+
+.radio {
+  display: inline;
+}
+.radioOpt {
+  color:white;
+  margin: 10px;
+}
+
+.btn a {
+  color:white;
+}
+
+.btn a:hover {
+  color: white;
+}
+.btn a:visted {
+  color: white;
+  text-decoration: none;
+}

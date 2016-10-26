@@ -3,27 +3,26 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title The Phish Tank
+    title Datagogy
     // Normalize
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
     // Bootstrap
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='style-index.css')
-    link(rel='icon', type='image/png', href='donuts.png')
   body
     // Navigation Bar
     nav.navbar.navbar-default
       .col-xs-6
-        a.btn.btn-info.navbar-btn(href='/') Phish Tank
+        a.btn.btn-success.navbar-btn(href='/') Datagogy
       .col-xs-6.text-right
-        a.btn.btn-default.navbar-btn(href='/') Sign in
-        a.btn.btn-default.navbar-btn(href='/register') Sign up
+        a.btn.btn-warning.navbar-btn(href='/') Sign in
+        a.btn.btn-warning.navbar-btn(href='/register') Sign up
     // Log in Landing Page
     .container.vertical-center
       .jumbotron.col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-lg-6.col-lg-offset-3
         form.form-horizontal.text-primary(action='/', method='POST')
           fieldset
-            legend.text-center WELCOME BACK
+            legend.text-center SIGN IN 
             .form-group
               label.col-lg-2.control-label(for='username') Username
               .col-lg-10
@@ -38,8 +37,8 @@ html(lang='en')
                     |  Remember Me
             .form-group
               .col-lg-6.col-lg-offset-3
-                input.btn.btn-primary.btn-block(type='submit', value='Log in')
+                input.btn.btn-success.btn-block(type='submit', value='Log in')
             .text-center
-              a(href='/register') New to the Phish Tank? Sign up!
+              a(href='/register') New to Datagogy? Sign up!
     // jQuery
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')

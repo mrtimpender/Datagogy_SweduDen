@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Dashboard
+    // Normalize
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')
+    // Open Sans
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    // Merriweather font
+    link(href='https://fonts.googleapis.com/css?family=Merriweather', rel='stylesheet', type='text/css')
+    // Raleway font
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    // Bootstrap
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/spacelab/bootstrap.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='style-dashboard.css')
+    link(rel='icon', type='image/png', href='donuts.png')
+  body
+  // Navigation Bar
+  nav.navbar.navbar-default
+    .col-xs-8
+      a.btn.btn-success.navbar-btn(href='/dashboard') Datagogy
+    .col-xs-4.text-right
+      a.btn.btn-warning.navbar-btn(href='/logout') Log out
+  // Img
+  .img-wrap
+    // Hero and Button
+    .container-fluid
+      .row.vertical-center 
+        .col-lg-4.buttons
+          div.blank
+          a.btn.btn-primary.btn-lg.center-block(href='/data-hq', role='button') Search Quizzes!
+        .col-lg-4.buttons
+          h1.text-center.hero Welcome Back, Elyse
+          a.btn.btn-primary.btn-lg.center-block(href='/create-quiz', role='button') Create Quizzes!
+        .col-lg-4.buttons
+          div.blank
+          a.btn.btn-primary.btn-lg.center-block(href='/generate-report', role='button') Generate Report!    
+  // Company Info Section
+  .container-fluid
+    .row
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   German 06/11/16
+          img(src='graph.jpg')
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   German 06/08/16
+          img(src='graph-2.jpg')
+      .col-lg-4.article-div
+        h3.article-header
+          span.glyphicon.glyphicon-pushpin
+          |   German 06/05/16
+          img(src='graph-3.jpg')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+  // Include all compiled plugins
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')

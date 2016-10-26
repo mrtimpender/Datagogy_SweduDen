@@ -11,8 +11,8 @@ router.route('/register')
     passport.authenticate('registerUser', function(err, user, info){
       if (err) {
         return response.send({ err: err, info: info });
-      } // If successful - send to profile page
-      return response.redirect('/profile');
+      } // If successful - send to dashboard page
+      return response.redirect('/dashboard');
     })(request, response, next);
   });
 
@@ -32,40 +32,50 @@ router.route('/')
       request.login(user, function(err) {
         if(err) {
           return response.redirect('/');
-        } // If correct login credentials, send to profile page
-        return response.redirect('/profile');
+        } // If correct login credentials, send to dashboard page
+        return response.redirect('/dashboard');
       });
     })(request, response, next);
   });
 
-// Define profile route
-router.route('/profile').get(function(request, response) {
+// Define dashboard route
+router.get('/dashboard', function(request, response) {
   // If not logged in/authenticated send back to index otherwise send to correct path
   if (!request.user) {
     response.redirect('/');
     return;
   }
-  response.render('profile');
+  response.render('dashboard');
 });
 
-// Define news route
-router.route('/news').get(function(request, response) {
+// Define create-quiz route
+router.get('/create-quiz', function(request, response) {
   // If not logged in/authenticated send back to index otherwise send to correct path
   if (!request.user) {
     response.redirect('/');
     return;
   }
-  response.render('news');
+  response.render('create-quiz');
 });
 
-// Define chat route
-router.get('/chat', function(request, response) {
+// Define reports page route
+router.get('/generate-report', function(request, response) {
   // If not logged in/authenticated send back to index otherwise send to correct path
   if (!request.user) {
     response.redirect('/');
     return;
   }
-  response.render('chat');
+  response.render('generate-report');
+});
+
+// Define data headquarters page route
+router.get('/data-hq', function(request, response) {
+  // If not logged in/authenticated send back to index otherwise send to correct path
+  if (!request.user) {
+    response.redirect('/');
+    return;
+  }
+  response.render('data-hq');
 });
 
 // Define logout route which is a virtual path - just a passport logout method
